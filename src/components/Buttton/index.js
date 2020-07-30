@@ -4,15 +4,13 @@ const Button = styled.button`
 
 background: #00969F;
 color: #FFFFFF;
-border: 1px solid var(--white);
-box-sizing: border-box;
+
 cursor: pointer;
 padding: 10px 15px;
 font-style: normal;
 font-weight: bold;
 font-size: 16px;
 outline: none;
-border-radius: 5px;
 text-decoration: none;
 display: inline-block;
 transition: opacity .3s;
@@ -33,6 +31,6 @@ opacity: .5;
   border: 0;
   text-align: center;
 }
-`;
+}`;
 
 export default Button;

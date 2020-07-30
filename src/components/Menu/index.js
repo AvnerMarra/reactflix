@@ -1,20 +1,24 @@
 import React from 'react';
-import Logo from '../../assets/img/tutoriaisflix-logo2.png';
-import './Menu.css';
-import ButtonLink from './components/ButtonLink';
-import Button from './Buttton';
+import Logo from '../../assets/img/tutoriaisflix-logo.png';
+import { LogoImage, MenuWrapper, ButtonLink, IconVideo} from './style.js';
+import styled from 'styled-components'
+import {VideoPlus} from '@styled-icons/boxicons-solid/VideoPlus'
+
+
+//import ButtonLink from './components/ButtonLink';
+//import Button from '../Buttton';
 
 function Menu() {
     return (
-        <nav className="Menu">
+        <MenuWrapper className="Menu">
             <a href="/">
-                <img className="Logo" src={Logo} alt="Tutoriaisflix logo" />
+                <LogoImage src={Logo} alt="Tutoriaisflix logo" />
             </a>
 
-            <Button as="a" href="/" className="ButtonLink">
+            <ButtonLink as="a" href="/" className="ButtonLink"><IconVideo />
                 Novo Vídeo
-            </Button>
-        </nav>
+            </ButtonLink>
+        </MenuWrapper>
     );
 }
 

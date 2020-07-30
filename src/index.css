@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 :root {
@@ -12,10 +12,13 @@
   --white: #FFFFFF;
   --frontEnd: #6BD1FF;
   --backEnd: #00C86F;
+  --subColor: #77c736;
+  --mainColor: #00969F;
 }
 
 html,
-body {
+body {  
+  background-color: var(--mainColor);
   font-family: 'Raleway', sans-serif;
 }
 .heading {
