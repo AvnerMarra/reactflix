@@ -3,7 +3,9 @@ import Button from '../Buttton'
 import {VideoPlus} from '@styled-icons/boxicons-solid/VideoPlus'
 
 export const IconVideo = styled(VideoPlus)`
-    max-width: 35px;
+    max-width: 55px;
+    text-align: center;
+    
 `;
 export const LogoImage = styled.img`
     max-width: 200px;
@@ -28,7 +30,6 @@ export const MenuWrapper = styled.nav`
     right: 0;
     padding-left: 1%;
     padding-right: 5%;
- 
   
     background: var(--mainColor);
     
@@ -40,16 +41,18 @@ export const MenuWrapper = styled.nav`
 `;
 
 export const ButtonLink = styled(Button)`
+    text-align: center;
+    text-decoration: none;
     
-    color: var(--white);
-    
+    color: var(--white);    
     cursor: pointer;
     padding: 10px 15px;
+    
+    font-size: 10px;    
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    
     outline: none;
-    text-decoration: none;
     display: inline-block;
     transition: opacity .3s;
 
@@ -59,14 +62,8 @@ export const ButtonLink = styled(Button)`
     }
     
     @media (max-width: 800px){
-        border: 0;
-        border-radius: 0;
-        outline: 0;
+        
         text-align: center;
-       
-        background-color: var(--mainColor);
-        color: var(--white);
-       
         position: fixed;
         left: 0;
         right: 0;
